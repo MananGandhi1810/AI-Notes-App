@@ -19,7 +19,6 @@ class NotePage extends StatefulWidget {
 class _NotePageState extends State<NotePage> {
   NoteModel? _note;
   final TextEditingController _controller = TextEditingController(text: "");
-  final FocusNode _focusNode = FocusNode();
   final model = GenerativeModel(
       model: 'gemini-pro', apiKey: Constants.apiKey);
 
